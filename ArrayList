@@ -19,6 +19,24 @@ public class Program {
 
 --------------------------------------------------------------------------------------
 
+import java.util.*;
+public class CF{
+    public static void main(String args[]){
+        ArrayList<String>arr = new ArrayList<String>();
+        arr.add("Google");
+        arr.add("Microsoft");
+        arr.add("Facebook");
+        arr.add("Amazon");
+        
+        for(String str:arr)
+        System.out.println(str);
+    }
+}
+
+---------------------------------------------------------------------------------------------------
+
+
+
 
 
 
