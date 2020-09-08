@@ -27,3 +27,28 @@ import java.util.*;
       }
   }
   }
+  
+  
+  
+  
+  public class MyClass {
+    public static void main(String args[]) {
+     
+     int num = 99;
+     int i = 0, j=1;
+     System.out.print(i+",");
+     System.out.print(j);
+     
+     int fib3 = 0;
+     while(fib3 < num){
+         fib3 = i + j ;
+         if(fib3 < num){
+         System.out.print(","+fib3);
+         }
+        
+         i = j;
+         j = fib3;
+     }
+     
+    }
+}
