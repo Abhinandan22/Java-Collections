@@ -1,0 +1,65 @@
+Sample Input 1
+2
+
+4
+
+10 4 7 3
+
+5
+
+1 2 3 4 5
+
+Sample Output 1
+21
+
+5
+
+Explanation 1
+In the first test case, we can pour 10 into the first jug, 4 into the second jug, 4 into the third jug (since it has non-increasing order), 3 into the fourth jug. Total of 21.
+
+In the second test case, we can pour 1 into the first jug and thereafter, 1 into each of the jugs. Total 5.
+
+
+
+
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+class FillingJugs {
+
+    // Write your solution here
+    public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int T = sc.nextInt();
+
+while(T-- > 0){
+   int N = sc.nextInt();
+   int sum = 0;       
+   int jugs[] = new int[N];
+       
+       for(int i = 0 ; i < N ; i++)
+       jugs[i] = sc.nextInt();
+      
+      sum = jugs[0];
+      int leastAmount = jugs[0];
+      
+      for(int j = 1 ; j <= jugs.length-1; j++){
+
+      if ( (jugs[j] < leastAmount) && (jugs[j] < jugs[j-1]) ){
+          leastAmount = jugs[j];
+          sum+=leastAmount; 
+      } 
+     else{
+         
+           sum+=leastAmount;
+       }
+      }
+
+      System.out.println(sum);
+      
+      
+      Passed :- 17 failed :- 5
