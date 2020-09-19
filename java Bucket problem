@@ -38,13 +38,13 @@ int T = sc.nextInt();
 
 while(T-- > 0){
    int N = sc.nextInt();
-   int sum = 0;       
+        
    int jugs[] = new int[N];
        
        for(int i = 0 ; i < N ; i++)
        jugs[i] = sc.nextInt();
       
-      sum = jugs[0];
+      int sum = jugs[0];
       int leastAmount = jugs[0];
       
       for(int j = 1 ; j <= jugs.length-1; j++){
