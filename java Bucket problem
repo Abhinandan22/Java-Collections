@@ -49,7 +49,7 @@ while(T-- > 0){
       
       for(int j = 1 ; j <= jugs.length-1; j++){
 
-      if ( (jugs[j] < leastAmount) && (jugs[j] < jugs[j-1]) ){
+      if ( (jugs[j] <= leastAmount) && (jugs[j] <= jugs[j-1]) ){
           leastAmount = jugs[j];
           sum+=leastAmount; 
       } 
