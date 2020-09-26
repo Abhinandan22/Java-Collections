@@ -1,4 +1,38 @@
 import java.util.*;
+
+public class ForLoop {
+
+    public static void forLoop(int f) {
+        int k=0,i=0,j=1;
+       System.out.print(i+" ");
+       System.out.print(j+" ");
+        while(k<f){
+        k = i+j;
+        if(k<=f){
+        System.out.print(k+" ");
+        }
+        i=j;
+        j=k;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int f = sc.nextInt();
+        forLoop(f);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+import java.util.*;
   
   public class Main{
   
