@@ -36,7 +36,7 @@ public class DataTypes {
     }
 
     int calc_square(int c) {
-        return (int)(c*c);
+        return c*c;
     }
 
     long calc_square(long d) {
