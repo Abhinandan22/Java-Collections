@@ -21,6 +21,8 @@ public class Exceptions {
         try{
 
              System.out.println(a/b);
+             //int x = a/b;
+             //return x + '';
 
         }
 
