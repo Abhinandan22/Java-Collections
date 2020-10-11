@@ -1,0 +1,32 @@
+
+import java.util.*;
+import java.lang.ArithmeticException;
+
+public class Exceptions {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        double a, b;
+        a = sc.nextDouble();
+        b = sc.nextDouble();
+        String ans = Exceptions(a, b);
+        System.out.println(ans);
+
+    }
+    public static String Exceptions(double a, double b) {
+        // TODO
+        // Hint:
+        // 1. Read on how to use the try-catch block.
+        // 2. Check the `getMessage()` method in Exception object when you divide by 0.
+        String str = "";
+        try{
+
+             System.out.println(a/b);
+
+        }
+
+        catch(ArithmeticException e){
+            str = e.getMessage();
+        }
+        return str;
+    }
+}
